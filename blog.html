@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="container section">
+  <div class="row">
+    <h1>Posts</h1>
+  </div>
+  {% for post in site.posts %}
+    <div class="row">
+      <div class="col-33">
+        <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> - {{ post.date | date: "%b %-d, %Y" }}</p>
+        <p>{{ post.description }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
