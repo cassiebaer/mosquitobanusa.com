@@ -1,6 +1,4 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
+
 @charset "utf-8";
 
 
@@ -129,33 +127,9 @@ $clr-wistful: #D8F1D3;
   width: 1em;
 }
 
-.flex-item {
-  flex: 1;
-}
-
 .img-rounded {
   border-radius: 50%;
 }
-
-.bg-green {
-  background-color: lightgreen;
-}
-
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
