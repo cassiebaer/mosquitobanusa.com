@@ -28,7 +28,13 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+.hero {
+  width: 100%;
+  height: 16em;
+  margin: 0 auto;
+  background-image: url("http://fillmurray.com/g/800/400");
+  background-size: cover;
+}
 
 // Use media queries like this:
 // @include media-query($on-palm) {
