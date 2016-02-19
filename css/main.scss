@@ -100,7 +100,19 @@ $clr-wistful: #D8F1D3;
 }
 
 .section {
-  padding: 2em 0;
+  padding: 2.5em 0;
+}
+
+.col-33 {
+  width: 33%;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.icon {
+  width: 1em;
 }
 
 .flex-item {

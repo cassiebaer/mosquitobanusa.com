@@ -14,8 +14,10 @@ description: > # this means to ignore newlines until "baseurl:"
   available for ridding your yard of backyard pests!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.mosquitobanusa.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+
+phoneRaleigh: "(919) 414-6703"
+phoneCary: "(919) 427-9575"
+phoneTollfree: "(855) 500-2631"
 
 # Build settings
 markdown: kramdown
