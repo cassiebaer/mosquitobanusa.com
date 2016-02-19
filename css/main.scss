@@ -55,6 +55,23 @@ $clr-wistful: #D8F1D3;
   background-color: $clr-wistful;
 }
 
+.speech-bubble {
+  padding: 1em;
+  text-align: right;
+
+  p {
+    margin: 0;
+  }
+}
+
+.speech-bubble__left {
+  border-radius: 2em 2em 0.1em 2em;
+}
+
+.speech-bubble__right {
+  border-radius: 2em 2em 2em 0.1em;
+}
+
 .hero {
   width: 100%;
   height: 24em;
@@ -72,22 +89,22 @@ $clr-wistful: #D8F1D3;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
 }
 
 .row {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 .section {
-  margin: 2em 0;
+  padding: 2em 0;
 }
 
 .flex-item {
   flex: 1;
-  margin: 1em 2em;
-  position: relative;
 }
 
 .img-rounded {
