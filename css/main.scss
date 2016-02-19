@@ -28,13 +28,76 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+// http://www.colourlovers.com/palette/110383/wistful
+$clr-seethe: #E4F1C3;
+$clr-sprig: #BAD696;
+$clr-fiddlehead: #9EBF6D;
+$clr-spilled-lime: #BBE2BC;
+$clr-wistful: #D8F1D3;
+
+.bg-seethe {
+  background-color: $clr-seethe;
+}
+
+.bg-sprig {
+  background-color: $clr-sprig;
+}
+
+.bg-fiddlehead {
+  background-color: $clr-fiddlehead;
+}
+
+.bg-spilled-lime {
+  background-color: $clr-spilled-lime;
+}
+
+.bg-wistful {
+  background-color: $clr-wistful;
+}
+
 .hero {
   width: 100%;
-  height: 16em;
+  height: 24em;
   margin: 0 auto;
-  background-image: url("http://fillmurray.com/g/800/400");
+  background-image: url("../img/yard.jpg");
   background-size: cover;
+  filter: sepia(70%);
 }
+
+.txt-center {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.section {
+  margin: 2em 0;
+}
+
+.flex-item {
+  flex: 1;
+  margin: 1em 2em;
+  position: relative;
+}
+
+.img-rounded {
+  border-radius: 50%;
+}
+
+.bg-green {
+  background-color: lightgreen;
+}
+
 
 // Use media queries like this:
 // @include media-query($on-palm) {
