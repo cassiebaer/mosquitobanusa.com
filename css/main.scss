@@ -1,5 +1,6 @@
-
+---
 @charset "utf-8";
+---
 
 
 
@@ -129,6 +130,12 @@ $clr-wistful: #D8F1D3;
 
 .img-rounded {
   border-radius: 50%;
+}
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
