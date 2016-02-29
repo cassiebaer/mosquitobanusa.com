@@ -28,16 +28,25 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 // http://www.colourlovers.com/palette/110383/wistful
-$clr-seethe: #E4F1C3;
-$clr-sprig: #BAD696;
-$clr-fiddlehead: #9EBF6D;
+$clr-seethe:       #E4F1C3;
+$clr-sprig:        #BAD696;
+$clr-fiddlehead:   #9EBF6D;
 $clr-spilled-lime: #BBE2BC;
-$clr-wistful: #D8F1D3;
+$clr-wistful:      #D8F1D3;
+
+a, a:active, a:link, a:hover, a:visited {
+  text-decoration: none;
+  color: darken($clr-fiddlehead, 25%);
+}
 
 .brand-logo {
-  font-size: 2em;
+  font-size: 2.5em;
   padding: 1em;
   letter-spacing: -2px;
+
+  &, &:active, &:link, &:hover, &:visited {
+    color: lighten($clr-wistful,5%);
+  }
 }
 
 .bg-seethe {
@@ -67,12 +76,23 @@ nav {
   a {
     padding: 1em;
     flex: 1;
+    transition: 0.5s;
+  }
+  a:hover {
+    background: $clr-spilled-lime;
+    text-decoration: none;
   }
 }
 
+.col {
+  padding: 0 2em;
+}
+
 .speech-bubble {
+  margin: 2em;
   padding: 1em;
   text-align: right;
+  border-radius: 2em 2em 2em 2em;
 
   p {
     margin: 0;
