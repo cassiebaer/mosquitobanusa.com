@@ -109,30 +109,8 @@ nav {
   text-align: center;
 }
 
-.container {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.row {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 .section {
   padding: 2.5em 0;
-}
-
-.col-33 {
-  width: 33%;
-}
-
-.col-25 {
-  width: 25%;
 }
 
 .col-icon {
@@ -156,6 +134,5 @@ nav {
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout"
+        "base"
 ;
