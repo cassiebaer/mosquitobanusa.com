@@ -34,6 +34,12 @@ $clr-fiddlehead: #9EBF6D;
 $clr-spilled-lime: #BBE2BC;
 $clr-wistful: #D8F1D3;
 
+.brand-logo {
+  font-size: 2em;
+  padding: 1em;
+  letter-spacing: -2px;
+}
+
 .bg-seethe {
   background-color: $clr-seethe;
 }
@@ -52,6 +58,16 @@ $clr-wistful: #D8F1D3;
 
 .bg-wistful {
   background-color: $clr-wistful;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+
+  a {
+    padding: 1em;
+    flex: 1;
+  }
 }
 
 .speech-bubble {
@@ -141,6 +157,5 @@ $clr-wistful: #D8F1D3;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
-        "layout",
-        "syntax-highlighting"
+        "layout"
 ;
