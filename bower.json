@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "open-iconic": "^1.1.1"
+    "open-iconic": "^1.1.1",
+    "pure": "^0.6.0"
   }
 }

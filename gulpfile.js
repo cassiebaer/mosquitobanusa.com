@@ -5,8 +5,8 @@ var cssnano = require("gulp-cssnano");
 var gulp  = require("gulp");
 var gutil = require("gulp-util");
 var imagemin = require("gulp-imagemin");
+var jade = require("gulp-jade");
 var sass  = require("gulp-sass");
-var shell = require("gulp-shell");
 var uglify = require("gulp-uglify");
 
 var bower_files = ["bower_components/jquery/dist/jquery.js"]
@@ -47,11 +47,12 @@ gulp.task("build:scripts", function () {
     .on("error", gutil.log);
 });
 
-gulp.task("build:jekyll", function () {
-  return gulp.src(".")
-    .pipe(shell("jekyll build"))
+gulp.task("build:jade", function () {
+  return gulp.src(["_app/jade/**/*.jade","!_app/jade/**/_*.jade"])
+    .pipe(jade())
+    .pipe(gulp.dest("_site"))
     .on("error", gutil.log);
-});
+})
 
 gulp.task("bs:reload", function () {
   browserSync.reload();
