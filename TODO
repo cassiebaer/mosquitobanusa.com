@@ -1,3 +1,4 @@
-- add auto prefixing for CSS
 - add email to contact
-- animate nav links for hover event
+- add canonical links to all pages
+- make sure all img tags have alt text
+- make feed.xml for blog?

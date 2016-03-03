@@ -1,0 +1,15 @@
+{
+  "title": "MosquitoBanUSA",
+  "email": "mosquitobanusa@gmail.com",
+  "description": "MosquitoBanUSA is a pest control company in Raleigh, NC that is committed to providing the best possible services available for ridding your yard of backyard pests!",
+  "url": "http://www.mosquitobanusa.com",
+  "phone": {
+    "raleigh": "(919) 414-6703",
+    "cary": "(919) 427-9575",
+    "tollfree": "(855) 500-2631"
+  },
+  "address": {
+    "street": "8480 Honeycutt Road Suite 200",
+    "city": "Raleigh, NC 27615"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "mbusa-jekyll",
+  "version": "0.1.1",
+  "description": "Jekyll rewrite of MBUSA website",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-data": "^1.2.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icasperzen/mosquitobanusa.com.git"
+  },
+  "keywords": [],
+  "author": "Casper M. H. Holmgreen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icasperzen/mosquitobanusa.com/issues"
+  },
+  "homepage": "https://github.com/icasperzen/mosquitobanusa.com#readme"
+}
