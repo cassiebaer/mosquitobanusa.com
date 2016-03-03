@@ -10,16 +10,16 @@ html
     //- Page specific, be sure to fill out vars
     title #{title || "MosquitoBanUSA"}
     meta(name="description",content=description)
-    link(rel="stylesheet",href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css")
-    <!--[if lte IE 8]>
-    link(rel="stylesheet",href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css")
-    <![endif]-->
-    <!--[if gt IE 8]>
-    link(rel="stylesheet",href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css")
-    <![endif]-->
+    link(rel="stylesheet",href="/css/pure-min.css")
+    link(rel="stylesheet",href="/css/grids-responsive-min.css")
     link(rel="stylesheet",href="/css/main.css")
     //- link(rel="canonical",href="/")
   body.bg-wistful
+    <!--[if lte IE 8]>
+    p You are using a very old browser. Please upgrade.
+    <![endif]-->
+    include _header.jade
     .page-content
       block content
     include _footer.jade
+
