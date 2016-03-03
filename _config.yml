@@ -21,3 +21,8 @@ phoneTollfree: "(855) 500-2631"
 
 # Build settings
 markdown: kramdown
+exclude: ["_app",
+          "gulpfile.js",
+          "node_modules",
+          "package.json",
+          "bower_components"]
