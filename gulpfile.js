@@ -62,21 +62,19 @@ gulp.task("build:styles:vendor", function () {
   .pipe(gulp.dest("_site/css/"));
 });
 
-gulp.task("bs:reload", function () {
-  browserSync.reload();
-});
-
 gulp.task("build", ["build:scripts", "build:images", "build:styles", "build:jade", "build:styles:vendor"], function () {
   // nop
 });
 
 gulp.task("serve", ["build"], function () {
   browserSync.init({
-    server: "./_site",
+    server: {
+      baseDir: "./_site",
+    }
   });
   gulp.watch("_config.json",["build:jade"]);
   gulp.watch("_app/css/**/*.scss",["build:styles"]);
-  gulp.watch("_app/js/**/*.js",["build:scripts","bs:reload"]);
-  gulp.watch("_app/jade/**/*.jade",["build:jade","bs:reload"]);
-  gulp.watch(["**/*.html","!_site/**/*"],["build:jade","bs:reload"]);
+  gulp.watch("_app/js/**/*.js",["build:scripts",browserSync.reload]);
+  gulp.watch("_app/jade/**/*.jade",["build:jade",browserSync.reload]);
+  gulp.watch(["**/*.html","!_site/**/*"],["build:jade",browserSync.reload]);
 });
