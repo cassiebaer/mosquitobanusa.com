@@ -31,9 +31,65 @@ $clr-fiddlehead:   #9EBF6D;
 $clr-spilled-lime: #BBE2BC;
 $clr-wistful:      #D8F1D3;
 
-.button {
-  padding: 1em;
+// https://nightquilter.files.wordpress.com/2015/02/img_8411-palette.png
+$clr-forest:    #283810;
+$clr-turtle:    #606818;
+$clr-sea-green: #589030;
+$clr-fern:      #70b020;
+$clr-sand:      #b0b060;
+$clr-orange:    #d16405;
+$clr-egg-shell: #dedcb5;
+
+body {
+  background: linear-gradient($clr-wistful,$clr-sea-green);
+}
+
+footer {
+  color: $clr-wistful;
+
+  a, a:active, a:link, a:hover, a:visited {
+    text-decoration: none;
+    color: $clr-sand;
+  }
+
+}
+
+.bg-forest {
+  background-color: $clr-forest;
+}
+
+.bg-turtle {
+  background-color: $clr-turtle;
+}
+
+.bg-sea-green {
+  background-color: $clr-sea-green;
+}
+
+.bg-fern {
+  background-color: $clr-fern;
+}
+
+.bg-sand {
+  background-color: $clr-sand;
+}
+
+.bg-orange {
+  background-color: $clr-orange;
+}
+
+.bg-egg-shell {
+  background-color: $clr-egg-shell;
+}
+
+.mybutton {
+  display: inline-block;
+  padding: 2em;
   border-radius: 1em;
+  a, a:active, a:link, a:hover, a:visited {
+    text-decoration: none;
+    color: $clr-forest;
+  }
 }
 
 .highlight {
@@ -43,7 +99,7 @@ $clr-wistful:      #D8F1D3;
 
 a, a:active, a:link, a:hover, a:visited {
   text-decoration: none;
-  color: darken($clr-fiddlehead, 25%);
+  color: $clr-forest;
 }
 
 .brand-logo {
@@ -156,7 +212,7 @@ nav {
 }
 
 .section {
-  padding: 4em 0;
+  padding: 3em 0;
 }
 
 .col-icon {
@@ -165,7 +221,7 @@ nav {
 }
 
 .col-icon__large {
-  height: 6em;
+  height: 12em;
   margin: 2em 0;
 }
 

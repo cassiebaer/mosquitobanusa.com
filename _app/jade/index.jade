@@ -4,50 +4,59 @@ extends __default.jade
 
 block content
   .hero
-    .overlay
-      p.highlight Mosquitos suck.
     .cta.txt-center
       include _typeform.jade
-  .section.pure-g.txt-center.bg-seethe
+  .section.pure-g.txt-center
     .pure-u-1-3
       .col
-        h2 Mosquitoes.
-        p Out of #[b sight].
+        h1 Mosquitoes.
+        h3 Out of #[b sight].
         img.img-rounded.col-icon__large(src="http://www.cycreekpestcontrol.com/wp-content/uploads/2015/10/mosquitos.svg")
     .pure-u-1-3
       .col
-        h2 Ticks.
-        p Out of #[b mind].
+        h1 Ticks.
+        h3 Out of #[b mind].
         img.img-rounded.col-icon__large(src="http://www.clker.com/cliparts/p/i/I/d/b/y/ticks.svg")
     .pure-u-1-3
       .col
         h1 You.
-        p: b Outside.
+        h3: b Outside.
         img.img-rounded.col-icon__large(src="img/bill_200.jpg")
-  .section.pure-g.txt-center.bg-fiddlehead
+  //- sprig
+  .section.txt-center
+    h1 You've already got 99 problems. #[span.highlight Let us take care of the rest.]
+  .section.pure-g.txt-center
     .pure-u-2-3
-      h1 You've already got 99 problems. #[span.highlight Let us take care of the rest.]
-      h2 Stop pests dead in their tracks before they even reach your yard.
+      .col
+        h2 Stop pests dead in their tracks before they even reach your yard.
+        p.
+          Contact us for a free consultation.
+          We will visit your property and make recommendations specific to your needs.
+          A typical yard is treated once every three weeks for maximum effect.
+        p: include _typeform.jade
+        p Every job is 100% satisfaction guaranteed.
     .pure-u-1-3
       img.col-icon__large(src="http://www.cycreekpestcontrol.com/wp-content/uploads/2015/10/mosquitos.svg")
-      p: a.button.bg-seethe(href="services.html") Learn more about our eco-friendly barrier sprays
+      p: a.mybutton.bg-seethe(href="services.html") Learn more about our eco-friendly barrier sprays
 
-  .section.pure-g.txt-center.bg-sprig
+  .section.pure-g.txt-center.bg-fiddlehead
     .pure-u-1-1
-      h1 Questions?
+      h1 F.A.Q.
     .pure-u-1-2
       .speech-bubble.speech-bubble__left.bg-seethe
-        h3 How can Bill help me manage mosquitoes and ticks in my yard?
-        p Bill #[a(href="services.html") kicks ass.]
+        h3 Are these treatments safe for my children and pets?
+        p.
+          Yes, we use pyrethrum-based solutions which are 100% safe for children and pets.
+          Read more about it #[a(href="services.html") here].
     .pure-u-1-2
       .speech-bubble.speech-bubble__right.bg-seethe
-        h3 Are Bill's pesticides dangerous for children or pets?
-        p: a(href="#") Nope!
+        h3 How long do the treatments last?
+        p Three weeks!
     .pure-u-1-2
       .speech-bubble.speech-bubble__left.bg-seethe
-        h3 How can Bill help me manage mosquitoes and ticks in my yard?
-        p Bill #[a(href="services.html") kicks ass.]
+        h3 Can the treatments be customized for my unique house?
+        p We prepare a custom plan for every customer.
     .pure-u-1-2
       .speech-bubble.speech-bubble__right.bg-seethe
-        h3 Are Bill's pesticides dangerous for children or pets?
-        p: a(href="#") Nope!
+        h3 What type of pests do you treat?
+        p Mosquitoes and ticks!
