@@ -31,9 +31,89 @@ $clr-fiddlehead:   #9EBF6D;
 $clr-spilled-lime: #BBE2BC;
 $clr-wistful:      #D8F1D3;
 
+// https://nightquilter.files.wordpress.com/2015/02/img_8411-palette.png
+$clr-forest:    #283810;
+$clr-turtle:    #606818;
+$clr-sea-green: #589030;
+$clr-fern:      #70b020;
+$clr-sand:      #b0b060;
+$clr-orange:    #d16405;
+$clr-egg-shell: #dedcb5;
+
+body {
+  background: linear-gradient($clr-wistful,$clr-sea-green);
+}
+
+.page-content {
+  height: 100%;
+}
+
+footer {
+  color: $clr-wistful;
+
+  a, a:active, a:link, a:hover, a:visited {
+    text-decoration: none;
+    color: $clr-sand;
+  }
+
+}
+
+.bg-forest {
+  background-color: $clr-forest;
+}
+
+.bg-turtle {
+  background-color: $clr-turtle;
+}
+
+.bg-sea-green {
+  background-color: $clr-sea-green;
+}
+
+.bg-fern {
+  background-color: $clr-fern;
+}
+
+.bg-sand {
+  background-color: $clr-sand;
+}
+
+.bg-orange {
+  background-color: $clr-orange;
+}
+
+.bg-egg-shell {
+  background-color: $clr-egg-shell;
+}
+
+.txt-box {
+  margin: 0 auto;
+  max-width: 24em;
+}
+
+.txt-box__double {
+  @extend .txt-box;
+  max-width: 48em;
+}
+
+.mybutton {
+  display: inline-block;
+  padding: 2em;
+  border-radius: 1em;
+  a, a:active, a:link, a:hover, a:visited {
+    text-decoration: none;
+    color: $clr-forest;
+  }
+}
+
+.highlight {
+  color: lighten($clr-sprig, 10%);
+  font-weight: 600;
+}
+
 a, a:active, a:link, a:hover, a:visited {
   text-decoration: none;
-  color: darken($clr-fiddlehead, 25%);
+  color: $clr-forest;
 }
 
 .brand-logo {
@@ -81,8 +161,25 @@ nav {
   }
 }
 
+.cta {
+  position: absolute;
+  right: 8em;
+  bottom: 4em;
+
+  a {
+    letter-spacing: 1px;
+    color: black;
+    padding: 2em;
+    transition: 0.5s;
+    border-radius: 1em;
+  }
+  a:hover {
+    background: $clr-seethe;
+  }
+}
+
 .col {
-  padding: 0 2em;
+  padding: 0 5%;
 }
 
 .speech-bubble {
@@ -101,19 +198,12 @@ nav {
 }
 
 .speech-bubble__right {
+  margin-top: 2em;
   border-radius: 2em 2em 2em 0.1em;
 }
 
 .hero {
-  width: 100%;
-  height: 24em;
-  margin: 0 auto;
-  background-image: url("../img/yard.jpg");
-  background-size: cover;
-  filter: saturate(110%);
-}
-
-.hero2 {
+  position: relative;
   width: 100%;
   height: 24em;
   margin: 0 auto;
@@ -127,12 +217,17 @@ nav {
 }
 
 .section {
-  padding: 2.5em 0;
+  padding: 3em 0;
 }
 
 .col-icon {
   width: 3em;
   margin: 2em;
+}
+
+.col-icon__large {
+  height: 12em;
+  margin: 2em 0;
 }
 
 .icon {
