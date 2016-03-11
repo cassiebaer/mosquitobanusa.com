@@ -20,26 +20,36 @@ block content
     .pure-u-1-3
       .col
         h1 You.
-        h3: b Outside.
+        h3: #[b Out]side.
         img.img-rounded.col-icon__large(src="img/bill_200.jpg")
   //- sprig
-  .section.txt-center
-    h1 You've already got 99 problems. #[span.highlight Let us take care of the rest.]
-  .section.pure-g.txt-center
+  .section.txt-center.bg-seethe
+    h1 You already have 99 problems. #[b Let us take care of the rest.]
+  .section.pure-g.bg-fiddlehead
     .pure-u-2-3
-      .col
-        h2 Stop pests dead in their tracks before they even reach your yard.
-        p.
-          Contact us for a free consultation.
-          We will visit your property and make recommendations specific to your needs.
-          A typical yard is treated once every three weeks for maximum effect.
-        p: include _typeform.jade
-        p Every job is 100% satisfaction guaranteed.
-    .pure-u-1-3
-      img.col-icon__large(src="http://www.cycreekpestcontrol.com/wp-content/uploads/2015/10/mosquitos.svg")
-      p: a.mybutton.bg-seethe(href="services.html") Learn more about our eco-friendly barrier sprays
+        .txt-box__double
+          h1 Relax outside. Undisturbed.
+          h2 #[span.highlight Barrier Sprays.] Effective against pests. Harmless for children.
+          p.
+            Kick back and enjoy your yard like never before!
+            Whether you are reclining in your hammock with a great book or having your friends over for BBQ, you can be sure that pests won't be bothering you.
+            Barrier sprays use a naturally-derived solution to kill mosquitoes and ticks while leaving your family unharmed.
+          p Rediscover and reconnect with nature from the comfort of your own back yard!
 
-  .section.pure-g.txt-center.bg-fiddlehead
+
+          h3: span.highlight Contact us now for a free consultation.
+          p.
+            We will visit your property and make recommendations specific to your needs.
+            A typical yard is treated once every three weeks for maximum effect.
+          p.
+            We're so confident that we will rid your yard of pests that we offer a #[span.highlight 100% satisfaction guarantee.]
+          //- p: include _typeform.jade
+    .pure-u-1-3.txt-center
+      img.col-icon__large(src="http://www.cycreekpestcontrol.com/wp-content/uploads/2015/10/mosquitos.svg")
+      //- p: a.mybutton.bg-seethe(href="services.html") Learn more about our eco-friendly barrier sprays
+      p: include _typeform.jade
+
+  .section.pure-g.txt-center
     .pure-u-1-1
       h1 F.A.Q.
     .pure-u-1-2
