@@ -119,8 +119,9 @@ a, a:active, a:link, a:hover, a:visited {
 
 .brand-logo {
   font-size: 2.5em;
-  padding: 1em;
-  letter-spacing: -2px;
+  padding: 1em 0.5em;
+  letter-spacing: -3px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 
   &, &:active, &:link, &:hover, &:visited {
     color: lighten($clr-wistful,5%);
@@ -150,6 +151,7 @@ a, a:active, a:link, a:hover, a:visited {
 nav {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 
   a {
     padding: 1em;
