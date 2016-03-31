@@ -20,3 +20,7 @@ footer.section.bg-forest
         p: a(href="https://www.facebook.com/mosquitobanusa/")
           img.icon(src="https://www.facebook.com/icon.svg")
           span &nbsp;Facebook
+script.
+  var pics = ["baseball","grill","pool","puppies"]; // "hammock"
+  var pic = pics[Math.floor(Math.random()*pics.length)];
+  document.getElementById("hero").style.backgroundImage = "url(../img/ss_" + pic + ".jpg)";
