@@ -3,30 +3,30 @@ block variables
 extends __default.jade
 
 block content
-  .hero
-    .cta.txt-center
-      include _typeform.jade
+  include _hero.jade
   .section.pure-g.txt-center
-    .pure-u-1-3
-      .col
+    .pure-u-1-1.pure-u-md-1-3
+      .txt-box
         h1 Mosquitoes.
         h3 Out of #[b sight].
         img.img-rounded.col-icon__large(src="http://www.cycreekpestcontrol.com/wp-content/uploads/2015/10/mosquitos.svg")
-    .pure-u-1-3
-      .col
+    .pure-u-1-1.pure-u-md-1-3
+      .txt-box
         h1 Ticks.
         h3 Out of #[b mind].
         img.img-rounded.col-icon__large(src="http://www.clker.com/cliparts/p/i/I/d/b/y/ticks.svg")
-    .pure-u-1-3
-      .col
+    .pure-u-1-1.pure-u-md-1-3
+      .txt-box
         h1 You.
         h3: #[b Out]side.
-        img.img-rounded.col-icon__large(src="img/bill_200.jpg")
-  //- sprig
+        img.img-rounded.col-icon__large(src="img/ss_hammock.jpg")
   .section.txt-center.bg-seethe
-    h1 You already have 99 problems. #[b Let us take care of the rest.]
+    .txt-box__double
+      p
+        h1 You already have 99 problems.
+        h1: #[b Let us take care of the rest.]
   .section.pure-g.bg-fiddlehead
-    .pure-u-2-3
+    .pure-u-1-1.pure-u-md-2-3
         .txt-box__double
           h1 Relax outside. Undisturbed.
           h2 #[span.highlight Barrier Sprays.] Effective against pests. Harmless for children.
@@ -36,7 +36,6 @@ block content
             Barrier sprays use a naturally-derived solution to kill mosquitoes and ticks while leaving your family unharmed.
           p Rediscover and reconnect with nature from the comfort of your own back yard!
 
-
           h3: span.highlight Contact us now for a free consultation.
           p.
             We will visit your property and make recommendations specific to your needs.
@@ -44,29 +43,29 @@ block content
           p.
             We're so confident that we will rid your yard of pests that we offer a #[span.highlight 100% satisfaction guarantee.]
           //- p: include _typeform.jade
-    .pure-u-1-3.txt-center
-      img.col-icon__large(src="http://www.cycreekpestcontrol.com/wp-content/uploads/2015/10/mosquitos.svg")
-      //- p: a.mybutton.bg-seethe(href="services.html") Learn more about our eco-friendly barrier sprays
-      p: include _typeform.jade
+    .pure-u-1-1.pure-u-md-1-3.txt-center
+      .txt-box
+        img.col-icon__large(src="http://www.cycreekpestcontrol.com/wp-content/uploads/2015/10/mosquitos.svg")
+        p: include _typeform.jade
 
   .section.pure-g.txt-center
     .pure-u-1-1
       h1 F.A.Q.
-    .pure-u-1-2
+    .pure-u-1-1.pure-u-md-1-2
       .speech-bubble.speech-bubble__left.bg-seethe
         h3 Are these treatments safe for my children and pets?
         p.
           Yes, we use pyrethrum-based solutions which are 100% safe for children and pets.
           Read more about it #[a(href="services.html") here].
-    .pure-u-1-2
+    .pure-u-1-1.pure-u-md-1-2
       .speech-bubble.speech-bubble__right.bg-seethe
         h3 How long do the treatments last?
         p Three weeks!
-    .pure-u-1-2
+    .pure-u-1-1.pure-u-md-1-2
       .speech-bubble.speech-bubble__left.bg-seethe
         h3 Can the treatments be customized for my unique house?
         p We prepare a custom plan for every customer.
-    .pure-u-1-2
+    .pure-u-1-1.pure-u-md-1-2
       .speech-bubble.speech-bubble__right.bg-seethe
         h3 What type of pests do you treat?
         p Mosquitoes and ticks!
