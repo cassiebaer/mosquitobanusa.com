@@ -6,6 +6,7 @@ var data  = require("gulp-data");
 var gulp  = require("gulp");
 var gutil = require("gulp-util");
 var imagemin = require("gulp-imagemin");
+var jpegtran = require("imagemin-jpegtran")
 var jade = require("gulp-jade");
 var sass  = require("gulp-sass");
 var uglify = require("gulp-uglify");
@@ -30,15 +31,25 @@ gulp.task("build:styles", function () {
 
 gulp.task("build:images", function () {
   return gulp.src(["_app/img/*"])
-    .pipe(imagemin())
+    .pipe(imagemin({
+      progressive: true,
+      optimizationLevel: 6,
+      use: [jpegtran()]
+    }))
     .pipe(gulp.dest("_site/img/"))
     .on("error", gutil.log);
 });
 
-gulp.task("build:scripts", function () {
+gulp.task("build:js", function () {
   return gulp.src(["_app/js/*"])
     .pipe(concat("main.js"))
     .pipe(uglify())
+    .pipe(gulp.dest("_site/js/"))
+    .on("error", gutil.log);
+});
+
+gulp.task("build:vendor:js", function () {
+  return gulp.src(["bower_components/picturefill/dist/picturefill.min.js"])
     .pipe(gulp.dest("_site/js/"))
     .on("error", gutil.log);
 });
@@ -62,7 +73,7 @@ gulp.task("build:styles:vendor", function () {
   .pipe(gulp.dest("_site/css/"));
 });
 
-gulp.task("build", ["build:scripts", "build:images", "build:styles", "build:jade", "build:styles:vendor"], function () {
+gulp.task("build", ["build:js", "build:vendor:js", "build:images", "build:styles", "build:jade", "build:styles:vendor"], function () {
   // nop
 });
 
@@ -74,7 +85,7 @@ gulp.task("serve", ["build"], function () {
   });
   gulp.watch("_config.json",["build:jade"]);
   gulp.watch("_app/css/**/*.scss",["build:styles"]);
-  gulp.watch("_app/js/**/*.js",["build:scripts",browserSync.reload]);
+  gulp.watch("_app/js/**/*.js",["build:js",browserSync.reload]);
   gulp.watch("_app/jade/**/*.jade",["build:jade",browserSync.reload]);
   gulp.watch(["**/*.html","!_site/**/*"],["build:jade",browserSync.reload]);
 });
