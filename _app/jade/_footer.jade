@@ -23,4 +23,6 @@ footer.section.bg-forest
 script.
   var pics = ["baseball","grill","pool","puppies"]; // "hammock"
   var pic = pics[Math.floor(Math.random()*pics.length)];
-  document.getElementById("hero").style.backgroundImage = "url(../img/ss_" + pic + ".jpg)";
+  var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  var sz = w > 1024 ? "xl" : "md";
+  document.getElementById("hero").style.backgroundImage = "url(../img/" + sz + "-ss_" + pic + ".jpg)";
