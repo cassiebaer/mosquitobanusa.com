@@ -164,10 +164,29 @@ nav {
   }
 }
 
-.cta {
+.overlay {
+  text-align: center;
   position: absolute;
-  right: 8em;
+  bottom: 2em;
+  left: 0;
+  right: 0;
+
+  h1 {
+    display: inline-block;
+    padding: 1em;
+    font-family: cursive;
+    font-size: 2.5em;
+    background-color: rgba($clr-forest,0.4);
+    color: lighten($clr-wistful, 20%);
+    border-radius: 1em;
+  }
+}
+
+.cta {
+  text-align: center;
+  position: absolute;
   bottom: 4em;
+  left: 45%;
 
   a {
     letter-spacing: 1px;
