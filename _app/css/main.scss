@@ -117,15 +117,32 @@ a, a:active, a:link, a:hover, a:visited {
   color: $clr-forest;
 }
 
+.branding {
+  width: 85%;
+  display: inline-block;
+}
+
 .brand-logo {
+  display: inline-block;
   font-size: 2.5em;
-  padding: 1em 0.5em;
+  padding: 0.5em;
+  padding-left: 0;
   letter-spacing: -3px;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 
   &, &:active, &:link, &:hover, &:visited {
     color: lighten($clr-wistful,5%);
   }
+}
+
+.brand-msg {
+  display: inline-block;
+  font-family: cursive;
+  font-size: 2em;
+  // position: absolute;
+  // bottom: 0;
+  color: darken($clr-wistful,10%);
+  margin-bottom: 0.2em;
 }
 
 .bg-seethe {
@@ -171,13 +188,13 @@ nav {
   left: 0;
   right: 0;
 
-  h1 {
+  p {
     display: inline-block;
     padding: 1em;
     margin: 0.5em 1em;
     font-family: cursive;
-    font-size: 2.5em;
-    background-color: rgba($clr-forest,0.4);
+    font-size: 1.2em;
+    background-color: rgba($clr-forest,0.6);
     color: lighten($clr-wistful, 20%);
     border-radius: 1em;
 
@@ -222,7 +239,6 @@ nav {
   background-position: 50% 50%;
   background-size: cover;
   filter: saturate(110%);
-  opacity: 0.9;
 }
 
 .txt-center {
